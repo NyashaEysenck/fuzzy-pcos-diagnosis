@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import { Loader2, AlertTriangle, ClipboardList, Heart, Lightbulb } from "lucide-react";
+import { Loader2, AlertTriangle, ClipboardList, Activity, Lightbulb } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/providers/AuthProvider";
 import SymptomsTracker from "@/components/dashboard/SymptomsTracker";
@@ -76,7 +76,7 @@ const Dashboard = () => {
         </div>
         <div className="mt-2 md:mt-0">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
-            <span className="mr-1">💜</span> Fuzzy Logic Powered
+            <span className="mr-1">🔍</span> Fuzzy Logic Powered
           </span>
         </div>
       </div>
@@ -105,7 +105,7 @@ const Dashboard = () => {
           <CardContent className="pt-6">
             <div className="flex flex-col items-center text-center space-y-2">
               <div className="bg-pink-100 p-3 rounded-full">
-                <Heart className="h-6 w-6 text-pink-600" />
+                <Activity className="h-6 w-6 text-pink-600" />
               </div>
               <h3 className="font-semibold text-lg">Smart Analysis</h3>
               <p className="text-sm text-muted-foreground">Fuzzy logic assessment</p>
