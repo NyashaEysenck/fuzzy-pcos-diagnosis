@@ -1,0 +1,104 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 20% 98%;
+    --foreground: 222 47% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 25%;
+
+    --primary: 258 78% 74%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 55% 53%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 258 78% 94%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 258 78% 74%;
+
+    --radius: 0.8rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 25%;
+    --sidebar-primary: 258 78% 74%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 174 55% 83%;
+    --sidebar-accent-foreground: 222 47% 25%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 258 78% 74%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 258 78% 74%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 174 55% 53%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 258 78% 74%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 174 55% 53%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .pcos-card {
+    @apply rounded-xl shadow-md bg-card text-card-foreground p-6 border border-pcos-muted transition-all duration-200 hover:shadow-lg;
+  }
+
+  .pcos-gradient-bg {
+    @apply bg-gradient-to-r from-pcos-blue/10 to-pcos-purple/10 dark:from-pcos-blue/5 dark:to-pcos-purple/5;
+  }
+}

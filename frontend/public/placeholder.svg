@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient background -->
+  <rect width="400" height="300" rx="20" fill="url(#gradient)" />
+  
+  <!-- LAVIA text -->
+  <text x="200" y="140" font-family="Arial, sans-serif" font-weight="bold" font-size="60" text-anchor="middle" fill="white">LAVIA</text>
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white">PCOS Smart Insights</text>
+  
+  <!-- Health symbol -->
+  <path d="M200 70 L210 90 L230 90 L215 105 L220 125 L200 115 L180 125 L185 105 L170 90 L190 90 Z" fill="white" opacity="0.8" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4AC6B7" /> <!-- teal -->
+      <stop offset="100%" stop-color="#9F7AEA" /> <!-- lavender -->
+    </linearGradient>
+  </defs>
+</svg>
