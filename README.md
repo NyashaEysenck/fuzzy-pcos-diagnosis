@@ -79,7 +79,7 @@ This approach allows for more nuanced health assessments compared to traditional
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/pcos-smart-insights.git
+   git clone https://github.com/NyashaEysenck/FuzzyAI-HealthSuite.git
    cd pcos-smart-insights-75-main
    ```
 
